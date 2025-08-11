@@ -32,7 +32,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Check for saved user session
     const savedUser = localStorage.getItem('shade-user');
     if (savedUser) {
       setUser(JSON.parse(savedUser));
@@ -43,7 +42,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const login = async (email: string, password: string) => {
     setIsLoading(true);
     try {
-      // Mock login - replace with actual API call
       await new Promise(resolve => setTimeout(resolve, 1000));
       const mockUser = {
         id: '1',
@@ -63,7 +61,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const register = async (email: string, password: string, name: string) => {
     setIsLoading(true);
     try {
-      // Mock registration - replace with actual API call
       await new Promise(resolve => setTimeout(resolve, 1000));
       const mockUser = {
         id: '1',
