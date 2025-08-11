@@ -12,7 +12,7 @@ const Cart = () => {
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Backdrop */}
+          { }
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -21,7 +21,7 @@ const Cart = () => {
             className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
           />
 
-          {/* Cart Panel */}
+          { }
           <motion.div
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
@@ -29,7 +29,7 @@ const Cart = () => {
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
             className="fixed top-0 right-0 h-full w-full max-w-md bg-[#0f0f0f] border-l border-white/10 z-50 flex flex-col"
           >
-            {/* Header */}
+            { }
             <div className="flex items-center justify-between p-6 border-b border-white/10">
               <div className="flex items-center space-x-2">
                 <ShoppingBag size={24} />
@@ -45,7 +45,7 @@ const Cart = () => {
               </motion.button>
             </div>
 
-            {/* Cart Items */}
+            { }
             <div className="flex-1 overflow-y-auto p-6">
               {items.length === 0 ? (
                 <div className="text-center py-12">
@@ -128,7 +128,7 @@ const Cart = () => {
               )}
             </div>
 
-            {/* Footer */}
+            { }
             {items.length > 0 && (
               <div className="border-t border-white/10 p-6 space-y-4">
                 <div className="flex items-center justify-between text-lg font-semibold">
