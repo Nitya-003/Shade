@@ -82,7 +82,7 @@ const ProductCard = ({ product, index }: { product: any; index: number }) => {
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
         
-        {/* Overlay */}
+        { }
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: isHovered ? 1 : 0 }}
@@ -121,7 +121,7 @@ const ProductCard = ({ product, index }: { product: any; index: number }) => {
           </div>
         </motion.div>
 
-        {/* Category badge */}
+        { }
         <div className="absolute top-4 left-4">
           <span className="px-3 py-1 bg-purple-500/80 rounded-full text-xs font-medium">
             {product.category}
