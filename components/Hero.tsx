@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden noise">
-      {/* Background gradients */}
+      { }
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
@@ -20,7 +20,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          {/* Main heading */}
+          { }
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ const Hero = () => {
             <span className="text-white">Shadows</span>
           </motion.h1>
 
-          {/* Subtitle */}
+          { }
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ const Hero = () => {
             and cutting-edge design.
           </motion.p>
 
-          {/* CTA Buttons */}
+          { }
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ const Hero = () => {
             </motion.button>
           </motion.div>
 
-          {/* Scroll indicator */}
+          { }
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
