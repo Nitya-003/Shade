@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
-@tailwind base;
-@tailwind components;
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+@import "tailwindcss/components";
 @tailwind utilities;
 
 :root {
@@ -76,7 +77,6 @@
   }
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
