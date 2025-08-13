@@ -5,7 +5,6 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment, PresentationControls } from '@react-three/drei';
 import { motion } from 'framer-motion';
 
-// Simple 3D Box component as placeholder for actual products
 const ProductBox = () => {
   return (
     <mesh>
@@ -61,14 +60,13 @@ const Experience3D = () => {
               <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} />
               <pointLight position={[-10, -10, -10]} intensity={0.5} />
               
-              <PresentationControls
+              <PresentationControls>
                 global
-                rotation={[0.13, 0.1, 0]}
-                polar={[-0.4, 0.2]}
-                azimuth={[-1, 0.75]}
-                config={{ mass: 2, tension: 400 }}
-                snap={{ mass: 4, tension: 400 }}
-              >
+              rotation={[0.13, 0.1, 0]}
+              polar={[-0.4, 0.2]}
+              azimuth={[-1, 0.75]}
+
+
                 <ProductBox />
               </PresentationControls>
               
