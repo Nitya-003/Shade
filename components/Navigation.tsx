@@ -37,7 +37,7 @@ const Navigation = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            {/* Logo */}
+            { }
             <Link href="/" className="flex items-center space-x-2">
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -47,7 +47,7 @@ const Navigation = () => {
               </motion.div>
             </Link>
 
-            {/* Desktop Navigation */}
+            { }
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/products" className="hover:text-purple-400 transition-colors">
                 Products
@@ -60,7 +60,7 @@ const Navigation = () => {
               </Link>
             </div>
 
-            {/* Actions */}
+            { }
             <div className="flex items-center space-x-4">
               <motion.button
                 whileHover={{ scale: 1.1 }}
@@ -108,7 +108,7 @@ const Navigation = () => {
                 <User size={20} />
               </motion.button>
 
-              {/* Mobile menu button */}
+              { }
               <motion.button
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -120,7 +120,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        { }
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
