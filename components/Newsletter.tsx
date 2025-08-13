@@ -10,7 +10,6 @@ const Newsletter = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Mock subscription
     setIsSubscribed(true);
     setTimeout(() => {
       setIsSubscribed(false);
